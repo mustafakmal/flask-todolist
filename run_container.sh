@@ -1,4 +1,4 @@
 #!/bin/bash
 pwd
-docker-compose build
+cd /home/assignment/
 docker-compose up
