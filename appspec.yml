@@ -1,7 +1,9 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /docker-compose.yml
+    destination: /home/assignment/
+  - source: /run_container.sh
     destination: /home/assignment/
 permissions:
   - object: /home/assignment/
@@ -11,6 +13,6 @@ permissions:
 hooks:
   AfterInstall:
     - location: /run_container.sh
-      timeout: 300
+      timeout: 600
       runas: root
   

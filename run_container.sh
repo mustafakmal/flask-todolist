@@ -1,4 +1,5 @@
 #!/bin/bash
 pwd
 cd /home/assignment/
-docker-compose up
+docker-compose down
+docker-compose up -d
