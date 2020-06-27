@@ -2,15 +2,15 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/assignment/
+    destination: /home/assignment/
 permissions:
-  - object: /home/ec2-user/assignment/
-    owner: ec2-user
-    group: ec2-user
-    mode: 700
+  - object: /home/assignment/
+    owner: root
+    group: root
+    mode: 770
 hooks:
   AfterInstall:
     - location: /run_container.sh
       timeout: 300
-      runas: ec2-user
+      runas: root
   
