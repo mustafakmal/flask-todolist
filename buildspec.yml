@@ -11,7 +11,8 @@ phases:
         commands:
             - echo Build started on `date`
             - echo Building Docker Image
-            - docker-compose build -t mustafakmal/assignment
+            - docker-compose build
+            - docker push mustafakmal/assignment
     post_build:
         commands:
             - echo Build completed on `date`
