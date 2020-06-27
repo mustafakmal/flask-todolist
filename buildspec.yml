@@ -12,6 +12,7 @@ phases:
             - echo Build started on `date`
             - echo Building Docker Image
             - docker-compose build
+            - docker login --username mustafakmal --password mustafa@7890
             - docker push mustafakmal/assignment:latest
     post_build:
         commands:
