@@ -5,13 +5,13 @@ phases:
         commands:
             - echo Nothing to do in the install phase...
     pre_build:
-      commands:
-        - echo Nothing to do in the pre_build phase...
+        commands:
+            - echo Nothing to do in the pre_build phase...
     build:
-      commands:
-        - echo Build started on `date`
-        - echo Building Docker Image
-        - docker-compose build -t mustafakmal/assignment
+        commands:
+            - echo Build started on `date`
+            - echo Building Docker Image
+            - docker-compose build -t mustafakmal/assignment
     post_build:
-      commands:
-        - echo Build completed on `date`
+        commands:
+            - echo Build completed on `date`
