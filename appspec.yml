@@ -1,11 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /docker-compose.yml
-    destination: /home/assignment/
-  - source: /run_container.sh
-    destination: /home/assignment/
-  - source: /.env
+  - source: /
     destination: /home/assignment/
 permissions:
   - object: /home/assignment/
