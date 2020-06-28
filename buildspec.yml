@@ -3,7 +3,9 @@ version: 0.2
 phases:
     install:
         commands:
-            - echo Nothing to do in the install phase...
+            - pip install flask_testing
+            - pip install flask_login
+            - echo Packages Installed
     pre_build:
         commands:
             - echo Nothing to do in the pre_build phase...
