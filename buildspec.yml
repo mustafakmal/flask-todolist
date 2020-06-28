@@ -3,8 +3,7 @@ version: 0.2
 phases:
     install:
         commands:
-            - pip install flask_testing
-            - pip install flask_login
+            - pip install -r test-requirements.txt
             - echo Packages Installed
     pre_build:
         commands:
